@@ -1,7 +1,7 @@
 # WarPath
 
 A VS Code extension to visualize and edit WPILib Pose2d arrays and individual variables directly on an FRC field map.
-<img width="1582" height="871" alt="image" src="https://github.com/user-attachments/assets/c22f5058-e369-458b-a485-5184088a32c9" />
+<img width="1836" height="562" alt="image" src="https://github.com/user-attachments/assets/38175b48-3570-43ad-8951-ce57f7dca914" />
 
 ## Features
 
