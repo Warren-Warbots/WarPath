@@ -6,7 +6,7 @@ export let logChannel: vscode.OutputChannel;
 
 export function activate(context: vscode.ExtensionContext) {
 	logChannel = vscode.window.createOutputChannel("WarPath");
-	logChannel.appendLine('WarPath Visualizer is now active!');
+	logChannel.appendLine('WarPath is now active!');
 
 	const codeLensProvider = new PoseCodeLensProvider();
 // ... rest of code stays similar but uses logChannel

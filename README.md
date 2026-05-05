@@ -13,7 +13,7 @@ A VS Code extension to visualize and edit WPILib Pose2d arrays and individual va
 ## Usage
 
 1. Open a Java file containing `Pose2d` arrays or variables.
-2. Click the CodeLens link **"View All Poses in Visualizer"** at the top of the file, or the individual links above each variable.
+2. Click the CodeLens link **"View All Poses in WarPath"** at the top of the file, or the individual links above each variable.
 3. Drag the robot box to move it, or the white handle to rotate it.
 
 ## Calibration
