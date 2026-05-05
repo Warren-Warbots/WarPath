@@ -2,11 +2,11 @@
   "name": "warpath",
   "displayName": "WarPath",
   "publisher": "warpath",
+  "version": "0.0.2",
+  "icon": "resources/icon.png",
   "author": {
     "name": "Your Name"
   },
-  "description": "Visualize and edit WPILib Pose2d arrays directly in your code.",
-  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/yourname/warpath"
