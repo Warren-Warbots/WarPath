@@ -9,14 +9,14 @@ export class PoseCodeLensProvider implements vscode.CodeLensProvider {
         // Add a "View All" at the very top
         const topRange = new vscode.Range(0, 0, 0, 0);
         lenses.push(new vscode.CodeLens(topRange, {
-            title: "$(eye) View All Poses in Field Visualizer",
+            title: "$(eye) View All Poses in WarPath",
             command: "frc-pose-visualizer.openEditor",
             arguments: [{ all: true }]
         }));
 
         const braceRegex = /(Pose2d\[\]|List<Pose2d>)\s+(\w+)\s*=\s*\{([\s\S]*?)\}/g;
         const listOfRegex = /(Pose2d\[\]|List<Pose2d>)\s+(\w+)\s*=\s*List\.of\(([\s\S]*?)\)/g;
-        const singleRegex = /Pose2d\s+(\w+)\s*=\s*(new\s+Pose2d\([\s\S]*?\));/g;
+        const singleRegex = /Pose2d\s+(\w+)\s*=\s*([^;]+);/g;
 
         const processMatches = (regex: RegExp, varGroup: number, contentGroup: number) => {
             let match;
@@ -28,7 +28,7 @@ export class PoseCodeLensProvider implements vscode.CodeLensProvider {
                 const contentOffset = match.index + match[0].indexOf(content);
 
                 const command: vscode.Command = {
-                    title: `View ${match[varGroup]} in Visualizer`,
+                    title: `View ${match[varGroup]} in WarPath`,
                     command: "frc-pose-visualizer.openEditor",
                     arguments: [
                         {
