@@ -37,6 +37,8 @@ export class PoseEditorPanel {
             }
         );
 
+        panel.iconPath = vscode.Uri.joinPath(context.extensionUri, 'resources', 'icon.png');
+
         PoseEditorPanel.currentPanel = new PoseEditorPanel(panel, context, args);
     }
 
