@@ -5,11 +5,11 @@
   "version": "0.0.2",
   "icon": "resources/icon.png",
   "author": {
-    "name": "Your Name"
+    "name": "Ravi Ponmalai"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourname/warpath"
+    "url": "https://github.com/Warren-Warbots/WarPath.git"
   },
   "engines": {
     "vscode": "^1.85.0"
@@ -27,7 +27,26 @@
         "command": "frc-pose-visualizer.openEditor",
         "title": "Open Pose Editor"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "WarPath",
+      "properties": {
+        "warpath.robotLength": {
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.1,
+          "maximum": 5.0,
+          "markdownDescription": "Robot length in meters (bumper-to-bumper along the robot's forward direction). Used to draw the robot rectangle on the field."
+        },
+        "warpath.robotWidth": {
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.1,
+          "maximum": 5.0,
+          "markdownDescription": "Robot width in meters (bumper-to-bumper perpendicular to forward). Used to draw the robot rectangle on the field."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
